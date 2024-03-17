@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,
+  "name": "REELINK",
+  "version": "1.0",
+  "description": "Redirects from AI coding tools to Google",
+  "permissions": [
+    "webRequestBlocking",
+    "webRequest",
+
+    "*://*.chat.openai.com//*",
+    "*://*.gemini.google.com/app*",
+    "*://*.claude.ai/chats*",
+    "*://*.www.perplexity.ai/*"
+  ],
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "browser_action": {
+    "default_icon": "reelink.png"
+  }
+}
